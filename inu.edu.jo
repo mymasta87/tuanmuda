@@ -1,59 +1,12 @@
-<?php
-
-function feedback404()
-{
-    header("HTTP/1.0 404 Not Found");
-    echo '<img src="https://i.ibb.co/SQkJGwt/404.jpg" alt="404 Not Found">';
-}
-
-if (isset($_GET['joanna'])) {
-    $filename = "masta.txt";
-    $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['joanna']);
-    foreach ($lines as $item) {
-        if (strtolower($item) === $target_string) {
-            $BRAND = strtoupper($target_string);
-        }
-    }
-    if (isset($BRAND)) {
-        $BRANDS = $BRAND;
-        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-        $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        if (isset($fullUrl)) {
-            $parsedUrl = parse_url($fullUrl);
-            $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
-            $host = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
-            $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
-            $query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
-            $baseUrl = $scheme . "://" . $host . $path . '?' . $query;
-            $urlPath = $baseUrl;
-        } else {
-            echo "URL saat ini tidak didefinisikan.";
-        }
-    } else {
-        feedback404();
-        exit();
-    }
-} else {
-    feedback404();
-    exit();
-}
-
-/* 
-
-*/
-
-?>
-
 <!DOCTYPE html>
 <html xmlns:wormhole="http://www.w3.org/1999/xhtml" lang="id-ID">
     <head>
         <meta charset="utf-8" />
-        <base href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" />
-        <title><?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</title>
-        <meta name="description" content="<?PHP echo $BRANDS ?> adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin." />
-        <meta name="keywords" content="<?PHP echo $BRANDS ?>, SLOT ASIA, SLOT ASIA777, ASIA SLOT APK, WWW ASIA ASIA128 SLOT"/>
-        <meta name="author" content="<?PHP echo $BRANDS ?>">
+        <base href="https://inu.edu.jo/?joanna=RAJAJUDOL" />
+        <title>RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</title>
+        <meta name="description" content="RAJAJUDOL adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin." />
+        <meta name="keywords" content="RAJAJUDOL, SLOT ASIA, SLOT ASIA777, ASIA SLOT APK, WWW ASIA ASIA128 SLOT"/>
+        <meta name="author" content="RAJAJUDOL">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <meta name="robots" content="index, follow" />
 
@@ -62,12 +15,12 @@ if (isset($_GET['joanna'])) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
 
         <meta name="aplus-auto-exp" content='[{"filter":"exp-tracking=suggest-official-store","logkey":"/lzdse.result.os_impr","props":["href"],"tag":"a"}]' />
-        <meta name="og:url" content="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" />
-        <meta name="og:site_name" content="<?php echo $BRANDS ?>" />
-        <meta name="og:title" content="<?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT" />
+        <meta name="og:url" content="https://inu.edu.jo/?joanna=RAJAJUDOL" />
+        <meta name="og:site_name" content="RAJAJUDOL" />
+        <meta name="og:title" content="RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT" />
         <meta name="og:type" content="product" />
-        <meta name="og:description" content="<?PHP echo $BRANDS ?> adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin." />
-        <meta property="article:tag" content="<?PHP echo $BRANDS ?>" />
+        <meta name="og:description" content="RAJAJUDOL adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin." />
+        <meta property="article:tag" content="RAJAJUDOL" />
         <meta property="article:tag" content="SLOT ASIA" />
         <meta property="article:tag" content="SLOT ASIA777" />
         <meta property="article:tag" content="ASIA SLOT APK" />
@@ -78,8 +31,8 @@ if (isset($_GET['joanna'])) {
         <meta name="og:image" content="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp" />
         <link rel="manifest" href="https://g.lazcdn.com/g/lzdfe/pwa-assets/5.0.7/manifest/id.json" />
         <link rel="shortcut icon" href="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp" />
-        <link rel="canonical" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" />
-        <link rel="amphtml" href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" />
+        <link rel="canonical" href="https://inu.edu.jo/?joanna=RAJAJUDOL" />
+        <link rel="amphtml" href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" />
         
         <!-- start preload -->
         <link rel="preload" href="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp" as="image" />
@@ -185,7 +138,7 @@ if (isset($_GET['joanna'])) {
             var timings = { start: Date.now() };
             var dataLayer = window.dataLayer || [];
             var pdpTrackingData =
-                '{"pdt_category":["Televisi & Video"],"pagetype":"pdp","pdt_discount":"","pdt_photo":"https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp","v_voya":1,"brand_name":"<?PHP echo $BRANDS ?>","brand_id":"842","pdt_sku":3642482616,"core":{"country":"ID","layoutType":"desktop","language":"in","currencyCode":"IDR"},"seller_name":"<?PHP echo $BRANDS ?>","pdt_simplesku":6108584955,"pdt_name":"<?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT","page":{"regCategoryId":"300300002584","xParams":"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr="},"supplier_id":"","pdt_price":"Rp2.699.000"}';
+                '{"pdt_category":["Televisi & Video"],"pagetype":"pdp","pdt_discount":"","pdt_photo":"https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp","v_voya":1,"brand_name":"RAJAJUDOL","brand_id":"842","pdt_sku":3642482616,"core":{"country":"ID","layoutType":"desktop","language":"in","currencyCode":"IDR"},"seller_name":"RAJAJUDOL","pdt_simplesku":6108584955,"pdt_name":"RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT","page":{"regCategoryId":"300300002584","xParams":"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr="},"supplier_id":"","pdt_price":"Rp2.699.000"}';
             try {
                 pdpTrackingData = JSON.parse(pdpTrackingData);
                 pdpTrackingData.v_voya = false;
@@ -919,18 +872,18 @@ if (isset($_GET['joanna'])) {
             {
                 "@type": "Product",
                 "@context": "https://schema.org",
-                "name": "<?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT",
+                "name": "RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT",
                 "image": "https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp",
                 "category": "Televisi & Video",
-                "brand": { "@type": "Brand", "name": "<?PHP echo $BRANDS ?>", "url": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" },
+                "brand": { "@type": "Brand", "name": "RAJAJUDOL", "url": "https://inu.edu.jo/?joanna=RAJAJUDOL" },
                 "sku": "3642482616_ID-6108584955",
                 "mpn": 3642482616,
-                "description": "<?PHP echo $BRANDS ?> adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin.",
-                "url": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
+                "description": "RAJAJUDOL adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin.",
+                "url": "https://inu.edu.jo/?joanna=RAJAJUDOL",
                 "offers": {
                     "@type": "Offer",
-                    "url": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
-                    "seller": { "@type": "Organization", "name": "<?php echo $BRANDS ?>" },
+                    "url": "https://inu.edu.jo/?joanna=RAJAJUDOL",
+                    "seller": { "@type": "Organization", "name": "RAJAJUDOL" },
                     "priceCurrency": "IDR",
                     "price": 168.888,
                     "availability": "https://schema.org/InStock",
@@ -947,15 +900,15 @@ if (isset($_GET['joanna'])) {
                         "@type": "ListItem",
                         "position": 1,
                         "item": {
-                            "@id": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
-                            "name": "<?PHP echo $BRANDS ?>"
+                            "@id": "https://inu.edu.jo/?joanna=RAJAJUDOL",
+                            "name": "RAJAJUDOL"
                         }
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "item": {
-                            "@id": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
+                            "@id": "https://inu.edu.jo/?joanna=RAJAJUDOL",
                             "name": "SLOT ASIA"
                         }
                     },
@@ -963,7 +916,7 @@ if (isset($_GET['joanna'])) {
                         "@type": "ListItem",
                         "position": 3,
                         "item": {
-                            "@id": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
+                            "@id": "https://inu.edu.jo/?joanna=RAJAJUDOL",
                             "name": "SLOT ASIA777"
                         }
                     },
@@ -971,7 +924,7 @@ if (isset($_GET['joanna'])) {
                         "@type": "ListItem",
                         "position": 4,
                         "item": {
-                            "@id": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
+                            "@id": "https://inu.edu.jo/?joanna=RAJAJUDOL",
                             "name": "ASIA SLOT APK"
                         }
                     },
@@ -979,7 +932,7 @@ if (isset($_GET['joanna'])) {
                         "@type": "ListItem",
                         "position": 5,
                         "item": {
-                            "@id": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
+                            "@id": "https://inu.edu.jo/?joanna=RAJAJUDOL",
                             "name": "WWW ASIA ASIA128 SLOT"
                         }
                     },
@@ -987,8 +940,8 @@ if (isset($_GET['joanna'])) {
                         "@type": "ListItem",
                         "position": 6,
                         "item": {
-                            "@id": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
-                            "name": "<?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT"
+                            "@id": "https://inu.edu.jo/?joanna=RAJAJUDOL",
+                            "name": "RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT"
                         }
                     }
                 ]
@@ -999,7 +952,7 @@ if (isset($_GET['joanna'])) {
         {
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": "https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>",
+          "name": "https://inu.edu.jo/?joanna=RAJAJUDOL",
           "operatingSystem": "ANDROID",
           "applicationCategory": "GameApplication",
           "aggregateRating": {
@@ -1019,7 +972,7 @@ if (isset($_GET['joanna'])) {
             "author": {
               "@type": "Person",
               "name": "joanna",
-              "reviewBody": "<?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT"
+              "reviewBody": "RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT"
             }
           },
           "offers": {
@@ -1131,13 +1084,13 @@ if (isset($_GET['joanna'])) {
                             <div class="lzd-links-bar" id="topActionLinks">
                                 <div class="links-list header-content ID id">
                                     <div class="top-links-item" id="topActionInternalFeedback" style="display: none;">
-                                        <a class="highlight" target="_blank" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d0">INTERNAL FEEDBACK</a>
+                                        <a class="highlight" target="_blank" href="https://inu.edu.jo/?joanna=RAJAJUDOL" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d0">INTERNAL FEEDBACK</a>
                                     </div>
                                     <div class="top-links-item" id="topActionFeedback">
-                                        <a target="_blank" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback"><?php echo $BRANDS ?></a>
+                                        <a target="_blank" href="https://inu.edu.jo/?joanna=RAJAJUDOL" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback">RAJAJUDOL</a>
                                     </div>
                                     <div class="top-links-item orange" id="topActionDownload" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d1">
-                                        <span><a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>"><?php echo $BRANDS ?> LOGIN</a></span>
+                                        <span><a href="https://inu.edu.jo/?joanna=RAJAJUDOL">RAJAJUDOL LOGIN</a></span>
                                         <div class="lzd-download-popup top-popup-wrap" id="lzdDownloadPopup">
                                             <div class="top-popup-content lzd-download-content">
                                                 <div class="get-the-app-scope">
@@ -1155,7 +1108,7 @@ if (isset($_GET['joanna'])) {
                                                                 />
                                                             </div>
                                                             <div class="promotion-text">
-                                                                <a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                                                <a href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                                                     <div class="get-the-app-download-text">
                                                                         <p>Belanja di App banyak untungnya:</p>
                                                                         <ul>
@@ -1192,10 +1145,10 @@ if (isset($_GET['joanna'])) {
                                         </div>
                                     </div>
                                     <div class="top-links-item" id="topActionSell">
-                                        <a class="black" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>"><?php echo $BRANDS ?> LINK ALTERNATIF</a>
+                                        <a class="black" href="https://inu.edu.jo/?joanna=RAJAJUDOL">RAJAJUDOL LINK ALTERNATIF</a>
                                     </div>
                                     <div class="top-links-item" id="topActionCustomCare" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d3">
-                                        <span><a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">RTP <?php echo $BRANDS ?></a></span>
+                                        <span><a href="https://inu.edu.jo/?joanna=RAJAJUDOL">RTP RAJAJUDOL</a></span>
                                         <div class="lzd-customcare-popup top-popup-wrap">
                                             <div class="top-popup-content l-customcare-content">
                                                 <ul class="care-list">
@@ -1242,11 +1195,11 @@ if (isset($_GET['joanna'])) {
                                         </div>
                                     </div>
                                     <div class="top-links-item" id="topActionTrack" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d4">
-                                        <span><a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>"><?php echo $BRANDS ?> SLOT</a></span>
+                                        <span><a href="https://inu.edu.jo/?joanna=RAJAJUDOL">RAJAJUDOL SLOT</a></span>
                                         <div class="lzd-track-popup top-popup-wrap" id="lzdTrackPop">
                                             <div class="top-popup-content lzd-track-content">
                                                 <div id="topActionMyLastOrder"></div>
-                                                <div class="track-title"><?PHP echo $BRANDS ?></div>
+                                                <div class="track-title">RAJAJUDOL</div>
                                                 <form class="track-order-form" id="topActionTrackForm">
                                                     <label for="topActionTrackOrderNumber" class="top-input-label">Nomor pesanan:</label>
                                                     <div class="top-input-wrap track-order-input-wrap">
@@ -1264,10 +1217,10 @@ if (isset($_GET['joanna'])) {
                                         </div>
                                     </div>
                                     <div class="top-links-item" id="anonLogin">
-                                        <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d5" style="color: #000000;">LOGIN</a>
+                                        <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d5" style="color: #000000;">LOGIN</a>
                                     </div>
                                     <div class="top-links-item grey" id="anonSignup">
-                                        <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d6" style="color: #000000;">DAFTAR</a>
+                                        <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d6" style="color: #000000;">DAFTAR</a>
                                     </div>
                                     <div class="top-links-item top-links-item-hidden" id="topActionUserAccont" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d7">
                                         <span id="myAccountTrigger" class="grey"></span>
@@ -1301,16 +1254,16 @@ if (isset($_GET['joanna'])) {
                             <div class="lzd-logo-bar">
                                 <div class="logo-bar-content header-content">
                                     <div class="lzd-logo-content">
-                                        <a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" data-spm="dhome">
+                                        <a href="https://inu.edu.jo/?joanna=RAJAJUDOL" data-spm="dhome">
                                             <img
                                                 src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/rajajudol.webp"
-                                                alt="<?PHP echo $BRANDS ?>"
+                                                alt="RAJAJUDOL"
                                                 style="object-fit: contain; width: 100%; height: auto;"
                                             />
                                         </a>
                                     </div>
                                     <div class="lzd-nav-search" data-spm="search">
-                                        <input type="text" class="input-search" placeholder="CARI DI <?PHP echo $BRANDS ?>">
+                                        <input type="text" class="input-search" placeholder="CARI DI RAJAJUDOL">
                                         <div class="container-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                                                 <path d="M15.4466 15.4466C18.1766 12.7166 18.1766 8.28331 15.4466 5.54164C12.7166 2.81164 8.28331 2.81164 5.54164 5.54164C2.81164 8.27164 2.81164 12.705 5.54164 15.4466C8.27164 18.1766 12.705 18.1766 15.4466 15.4466Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1324,7 +1277,7 @@ if (isset($_GET['joanna'])) {
                                             <div class="lzd-site-nav-menu lzd-site-nav-menu-active" data-mod-name="@ali/lzdmod-site-menu-nav-pc/pc/index" data-config="{}">
                                                 <div class="lzd-site-menu-nav-container">
                                                     <div class="lzd-site-menu-nav-category">
-                                                        <a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                                        <a href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                                             <span class="lzd-site-menu-nav-category-text">Kategori</span>
                                                         </a>
                                                         <div class="lzd-site-menu-nav-menu">
@@ -2365,13 +2318,13 @@ if (isset($_GET['joanna'])) {
                                                         >
                                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                                                                 <img
-                                                                    alt="<?PHP echo $BRANDS ?>"
+                                                                    alt="RAJAJUDOL"
                                                                     class="lzd-site-nav-menu-iconfont-img"
                                                                     src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/ICON%20RJ.png"
                                                                 />
                                                             </span>
                                                             <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-LazMall">&#xe629;</i>-->
-                                                            <span class="lzd-menu-labels-item-text"><?PHP echo $BRANDS ?></span>
+                                                            <span class="lzd-menu-labels-item-text">RAJAJUDOL</span>
                                                         </a>
                                                         <a class="lzd-menu-labels-item" href="//pages.lazada.co.id/wow/i/id/digitalgoods/home?hybrid=1&amp;scm=1003.4.icms-zebra-5000383-2586266.OTHER_6502207798_7692459">
                                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
@@ -2441,7 +2394,7 @@ if (isset($_GET['joanna'])) {
                             <div class="lzd-site-nav-menu lzd-site-nav-menu-active" data-mod-name="@ali/lzdmod-site-menu-nav-pc/pc/index" data-config="{}">
                                 <div class="lzd-site-menu-nav-container">
                                     <div class="lzd-site-menu-nav-category">
-                                        <a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                        <a href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                             <span class="lzd-site-menu-nav-category-text">Kategori</span>
                                         </a>
                                         <div class="lzd-site-menu-nav-menu">
@@ -3478,19 +3431,19 @@ if (isset($_GET['joanna'])) {
                                     <nav class="lzd-menu-labels" data-spm="menu">
                                         <a
                                             class="lzd-menu-labels-item"
-                                            href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>"
+                                            href="https://inu.edu.jo/?joanna=RAJAJUDOL"
                                         >
                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                                                 <img
-                                                    alt="<?php echo $BRANDS ?>"
+                                                    alt="RAJAJUDOL"
                                                     class="lzd-site-nav-menu-iconfont-img"
                                                     src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/ICON%20RJ.png"
                                                 />
                                             </span>
                                             <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-LazMall">&#xe629;</i>-->
-                                            <span class="lzd-menu-labels-item-text"><?php echo $BRANDS ?></span>
+                                            <span class="lzd-menu-labels-item-text">RAJAJUDOL</span>
                                         </a>
-                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                                                 <img
                                                     alt="SLOT ASIA"
@@ -3501,7 +3454,7 @@ if (isset($_GET['joanna'])) {
                                             <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-MobileTop1">&#xe768;</i>-->
                                             <span class="lzd-menu-labels-item-text">SLOT ASIA</span>
                                         </a>
-                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                                                 <img
                                                     alt="SLOT ASIA777"
@@ -3512,7 +3465,7 @@ if (isset($_GET['joanna'])) {
                                             <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-Vouchers">&#xe76a;</i>-->
                                             <span class="lzd-menu-labels-item-text">SLOT ASIA777</span>
                                         </a>
-                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                                                 <img
                                                     alt="ASIA SLOT APK"
@@ -3523,7 +3476,7 @@ if (isset($_GET['joanna'])) {
                                             <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-Categories">&#xe765;</i>-->
                                             <span class="lzd-menu-labels-item-text">ASIA SLOT APK</span>
                                         </a>
-                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">
+                                        <a class="lzd-menu-labels-item" href="https://inu.edu.jo/?joanna=RAJAJUDOL">
                                             <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                                                 <img
                                                     alt="WWW ASIA ASIA128 SLOT"
@@ -3703,19 +3656,19 @@ if (isset($_GET['joanna'])) {
                             <ul class="breadcrumb" id="J_breadcrumb">
                                 <li class="breadcrumb_item">
                                     <span class="breadcrumb_item_text">
-                                        <a title="SLOT ASIA" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" class="breadcrumb_item_anchor"><span>SLOT ASIA</span></a>
+                                        <a title="SLOT ASIA" href="https://inu.edu.jo/?joanna=RAJAJUDOL" class="breadcrumb_item_anchor"><span>SLOT ASIA</span></a>
                                         <div class="breadcrumb_right_arrow"></div>
                                     </span>
                                 </li>
                                 <li class="breadcrumb_item">
                                     <span class="breadcrumb_item_text">
-                                        <a title="SLOT ASIA777" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" class="breadcrumb_item_anchor"><span>SLOT ASIA777</span></a>
+                                        <a title="SLOT ASIA777" href="https://inu.edu.jo/?joanna=RAJAJUDOL" class="breadcrumb_item_anchor"><span>SLOT ASIA777</span></a>
                                         <div class="breadcrumb_right_arrow"></div>
                                     </span>
                                 </li>
                                 <li class="breadcrumb_item">
                                     <span class="breadcrumb_item_text">
-                                        <span class="breadcrumb_item_anchor breadcrumb_item_anchor_last"><?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</span>
+                                        <span class="breadcrumb_item_anchor breadcrumb_item_anchor_last">RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</span>
                                     </span>
                                 </li>
                             </ul>
@@ -3789,12 +3742,12 @@ if (isset($_GET['joanna'])) {
                                     <div class="gallery-preview-panel__content">
                                         <img
                                             class="pdp-mod-common-image gallery-preview-panel__image"
-                                            alt="<?PHP echo $BRANDS ?>"
+                                            alt="RAJAJUDOL"
                                             src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/RAJAJUDOL-WELCOME.webp"
                                         />
                                     </div>
                                     <p style="text-align: center;">
-                                        <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>">
+                                        <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL">
                                             <img style="width: 95%;" src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/DAFTAR-RAJAJUDOL.gif" alt="SLOT ASIA">
                                         </a>
                                     </p>
@@ -3812,7 +3765,7 @@ if (isset($_GET['joanna'])) {
                                         <div id="module_redmart_top_promo_banner" class="pdp-block module"></div>
                                         <div id="module_product_title_1" class="pdp-block module">
                                             <div class="pdp-product-title">
-                                                <div class="pdp-mod-product-badge-wrapper"><h1 class="pdp-mod-product-badge-title"><?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</h1></div>
+                                                <div class="pdp-mod-product-badge-wrapper"><h1 class="pdp-mod-product-badge-title">RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</h1></div>
                                             </div>
                                         </div>
                                         <div id="module_pre-order-tag" class="pdp-block module"></div>
@@ -3841,16 +3794,16 @@ if (isset($_GET['joanna'])) {
                                         <div id="module_product_brand_1" class="pdp-block module">
                                             <div class="pdp-product-brand">
                                                 <span class="pdp-product-brand__name">Merek<!-- -->:<!-- --> </span>
-                                                <a style="margin-right: 1rem;" class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>"><?PHP echo $BRANDS ?></a>
-                                                <a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>">SLOT ASIA</a>
+                                                <a style="margin-right: 1rem;" class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://inu.edu.jo/?joanna=RAJAJUDOL">RAJAJUDOL</a>
+                                                <a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://inu.edu.jo/?joanna=RAJAJUDOL">SLOT ASIA</a>
                                                 <!-- <div class="pdp-product-brand__divider"></div> -->
                                                 <div class="pdp-cart-concern" bis_skin_checked="1">
-                                                    <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>">
+                                                    <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL">
                                                         <button class="add-to-cart-buy-now-btn pdp-button pdp-button_type_text pdp-button_theme_yellow pdp-button_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdeHYO5j">
                                                             <span class="pdp-button-text">LOGIN</span>
                                                         </button>
                                                     </a>
-                                                    <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" target="_blank">
+                                                    <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" target="_blank">
                                                         <button class="add-to-cart-buy-now-btn pdp-button pdp-button_type_text pdp-button_theme_orange pdp-button_size_xl">
                                                             <span class="pdp-button-text"><span class="">DAFTAR</span></span>
                                                         </button>
@@ -3875,8 +3828,8 @@ if (isset($_GET['joanna'])) {
                                                         <div class="seller-name__wrapper">
                                                             <div class="seller-name__title">Dijual oleh SLOT</div>
                                                             <div class="seller-name__detail" data-spm="seller">
-                                                                <a href="https://inu.edu.jo/?joanna=<?php echo $BRANDS ?>" class="pdp-link pdp-link_size_l pdp-link_theme_black seller-name__detail-name">
-                                                                    <?PHP echo $BRANDS ?>
+                                                                <a href="https://inu.edu.jo/?joanna=RAJAJUDOL" class="pdp-link pdp-link_size_l pdp-link_theme_black seller-name__detail-name">
+                                                                    RAJAJUDOL
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3891,13 +3844,13 @@ if (isset($_GET['joanna'])) {
                                 <div id="module_product_price_1" class="pdp-block module">
                                     <div class="pdp-mod-product-price">
                                         <div class="site-description">
-                                            <h2 class="w-80"><?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</h2>
+                                            <h2 class="w-80">RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT</h2>
                                             <p>
-                                            <?PHP echo $BRANDS ?> ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT. <?PHP echo $BRANDS ?> adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin.
+                                            RAJAJUDOL ™ SLOT ASIA777 PAKAI APK SERVER ASIA128 SLOT. RAJAJUDOL adalah slot asia777 memberikan invoasi baru asia slot apk agar semua pemain slot dapat bermain asia1238 slot gampang maxwin.
                                             </p>
                                             <ul>
                                                 LIST TARGET :
-                                                <li><?PHP echo $BRANDS ?></li>
+                                                <li>RAJAJUDOL</li>
                                                 <li>SLOT ASIA</li>
                                                 <li>SLOT ASIA777</li>
                                                 <li>ASIA SLOT APK</li>
@@ -4347,7 +4300,7 @@ if (isset($_GET['joanna'])) {
                 <div class="footer-fourth">
                     <div class="lzd-footer-inner">
                         <div class="lzd-footer-width-50" data-spm="venture">
-                            <h3 class="lzd-footer-title"><?PHP echo $BRANDS ?></h3>
+                            <h3 class="lzd-footer-title">RAJAJUDOL</h3>
                             <a class="lzd-footer-sprit lzd-footer-country country-id" href="https://www.lazada.co.id"></a>
                             <a class="lzd-footer-sprit lzd-footer-country country-my" href="https://www.lazada.com.my"></a>
                             <a class="lzd-footer-sprit lzd-footer-country country-ph" href="https://www.lazada.com.ph"></a>
@@ -4643,15 +4596,15 @@ window.onload = function() {
         </script>
         <style>.fixed-footer{display:flex;justify-content:space-around;position:fixed;background:linear-gradient(to bottom,rgb(38, 227, 0) 0,rgb(9, 69, 4) 100%);padding:5px 0;border-radius:50px 50px 0 0;left:0;right:0;bottom:0;z-index:99}.fixed-footer a{flex-basis: calc((100% - 15px*6)/ 5);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;max-width:75px;font-size:12px}.fixed-footer .center{transform:scale(1.5) translateY(-5px);background:center no-repeat;background-size:contain;background-color:inherit;border-radius:50%}.fixed-footer img{max-width:30%;margin-bottom:5px}</style>
 <div class="fixed-footer">
-  <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" rel="nofollow noopener" target="_blank">
+  <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" rel="nofollow noopener" target="_blank">
     <img layout="intrinsic" src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/ICON%20RJ.png" alt="DAFTAR"></img>
       DAFTAR
      </a>
-  <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" rel="nofollow noopener" target="_blank">
+  <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" rel="nofollow noopener" target="_blank">
     <img layout="intrinsic" src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/ICON%20RJ.png" alt="LOGIN"></img>
       LOGIN
   </a>
-  <a href="https://komdidog.site/inuedujo/?joanna=<?php echo $BRANDS ?>" rel="nofollow noopener" target="_blank" class="js_live_chat_link live-chat-link">
+  <a href="https://komdidog.site/inuedujo/?joanna=RAJAJUDOL" rel="nofollow noopener" target="_blank" class="js_live_chat_link live-chat-link">
     <img class="live-chat-icon" layout="intrinsic" src="https://pub-434259f7298942e39387d59f922d4cb6.r2.dev/ICON%20RJ.png" alt="RTP"></img>
       RTP GACOR
   </a>
